@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilecart</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 400px;
+            background-color: rgb(209, 209, 207);
+            border: 10px solid rgb(130, 118, 118);
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top : 60px;
+            margin-left : 70px;
+            
+        }
+
+        .name{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .info{
+            text-align: center;
+            font-size: 20px;
+        }
+        .box{
+            margin: 60px;
+            text-align: center;
+            height: 50px;
+            margin-top: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="name">Profile Card</div><br><br>
+        <img src="https://i.pinimg.com/originals/4e/f5/89/4ef58991439b1bb59c6cf1a86a3931f4.jpg?nii=t" alt="Avatar" class="img"><br><br>
+        <div class="info">Priyanshi Yadav</div><br><br>
+        <div class="info">Data Scientist</div>
+        <div class="box"><button>Follow</button></div>
+    </div>
+    
+</body>
+</html>
