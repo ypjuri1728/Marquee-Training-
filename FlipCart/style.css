@@ -1,0 +1,131 @@
+*{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        .header{
+            width:100%;
+            border :1px solid black;
+            padding:15px 30px;
+        }
+
+        .top{
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        .left{
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .logo{
+            background-color:yellow;
+            font-style:italic;
+            font-size:20px;
+            font-weight:bold;
+            display:inline-block;
+            align-items:center;
+            border-radius:5px;
+            text-align: center;
+            padding : 10px 15px;
+        }
+
+        .travel{
+            background-color:rgb(221, 211, 211);
+            font-weight:600;
+            /* height:30px; */
+            border-radius:7px;
+            display:inline-block;
+            font-size:15px;
+            font-style:italic;
+            text-align: center;
+            padding: 10px 15px;
+        }
+
+        .location{
+            color:rgb(28, 21, 21);
+            font-size:18px;
+            margin-left:auto;
+        }
+
+        .middle{
+            gap:30px;
+            display:flex;
+             align-items:center;
+        }
+
+        .search{
+            width:800px;
+            height:40px;
+            border-radius:5px;
+            border-color:gray;
+            border:1px solid;
+            margin-right: auto;
+            padding :10px;
+            
+        }
+        .search-btn{
+            width:70px;
+            height:40px;
+            background-color:rgb(134, 116, 116);
+            color:white;
+            border-radius:5px;
+            margin-left:60px;
+        }
+        .bottom .box{
+            width:40px;
+            height: 30px;
+            background-color:gray;
+            display:inline-block;
+            padding:  30px 30px;
+             border-radius:5px;
+        }
+        #hero img{
+            width:500px;
+            height:300px;
+            display:inline-block;
+            padding :10px 20px;
+                }
+       #rec{
+    background-color:grey;
+    width:100%;
+    padding:30px;
+}
+#rec .box{
+    display:inline-block;
+    background-color:white;
+    margin:15px;
+}
+#rec img{
+    width:180px;
+    height:250px;
+}
+        
+.footer{
+    background-color:black;
+    color:white;
+    padding:30px;
+}
+
+.description,
+.about,
+.help{
+    display:inline-block;
+    width:30%;
+    vertical-align:top;
+    padding:20px;
+    background-color:black;
+}
+
+.copy{
+    text-align:center;
+    color:gray;
+    margin-top:20px;
+    border-top:1px solid gray;
+    padding-top:10px;
+}
+        
