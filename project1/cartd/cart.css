@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Georgia, serif;
+  background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+ 
+/* PAGE - 3 cards in a row */
+.page {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+/* ========================
+   BASE CARD
+======================== */
+.card {
+  width: 320px;
+  background: linear-gradient(160deg, #4a5abf 0%, #a855f7 100%);
+  border-radius: 20px;
+  padding: 22px 20px 28px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+ 
+/* CARD VARIANTS */
+.card-dark {
+  background: linear-gradient(160deg, #0f0f1a 0%, #1a0a3e 100%);
+}
+ 
+.card-gold {
+  background: linear-gradient(160deg, #b8860b 0%, #f5d060 100%);
+}
+ 
+/* ========================
+   TOP ROW
+======================== */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+ 
+/* BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+ 
+.brand-icon {
+  font-size: 22px;
+  background: #e03b8b;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dark-icon {
+  background: #d4af37;
+}
+ 
+.brand-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
+}
+ 
+.brand-title.white { color: #ffffff; }
+.brand-title.dark  { color: #1a1a1a; }
+ 
+/* DECO LINES */
+.deco {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 4px;
+}
+ 
+.deco-line {
+  width: 36px;
+  height: 3px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+ 
+.deco-line:nth-child(2) { width: 26px; }
+.deco-line:nth-child(3) { width: 16px; }
+ 
+.white-line { background: rgba(255,255,255,0.5); }
+.dark-line  { background: rgba(0,0,0,0.3); }
+ 
+/* ========================
+   PRODUCT LABEL
+======================== */
+.product-label {
+  font-size: 16px;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+ 
+.product-label.white { color: rgba(255,255,255,0.85); }
+.product-label.dark  { color: #1a1a1a; }
+ 
+/* ========================
+   IMAGE
+======================== */
+.img-wrap {
+  width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+ 
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+/* ========================
+   SHOP BUTTON
+======================== */
+.shop-btn {
+  display: block;
+  width: 160px;
+  margin: 0 auto 14px;
+  background: #ffffff;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+ 
+.shop-btn:hover {
+  background: #f0f0f0;
+}
+ 
+.gold-btn {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+ 
+.gold-btn:hover {
+  background: #655520;
+}
+ 
+.dark-btn {
+  background: #1a1a1a;
+  color: #f5d060;
+}
+ 
+.dark-btn:hover {
+  background: #333333;
+}
+ 
+/* ========================
+   WEBSITE
+======================== */
+.website {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+ 
+.gold-text { color: #d4af37; }
+.website.dark { color: #1a1a1a; }
+ 
+/* ========================
+   HOVER ON CARD
+======================== */
+.card:hover .product-img {
+  opacity: 0.92;
+}
+ 
+.card:hover .img-wrap {
+  border-color: rgba(255,255,255,0.5);
+}
+ 
