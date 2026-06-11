@@ -1,159 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube-clone</title>
-   <link rel="Stylesheet" href="style.css">
-</head>
-<body>
-   <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="nav-left">
+        <p class="hamburger">&#9776;</p>
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png"
+          alt="yt photo"
+          height="30px"
+          width="33px"
+        />
+        <p class="yt-logo">YouTube</p>
+      </div>
+      <div class="nav-center">
+        <input type="text" placeholder="Search" class="search-box" />
+        <button class="search-btn">&#128269;</button>
+        <button class="mic-btn">&#127908;</button>
+      </div>
+      <!-- profile icon -->
 
-    <!-- LEFT -->
-    <div class="icon">
-
-        <img src="https://cdn-icons-png.flaticon.com/128/5997/5997060.png"
-        width="25px">
-
-        <img src="https://th.bing.com/th/id/ODF.MrzzDTMlZsq_k5DWWmv7Hw?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2"
-        width="35px">
-
-        <h2>YouTube</h2>
-
+      <div class="nav-right">
+        <button class="create-btn">+ Create</button>
+        <button class="bell-btn">&#128276;</button>
+        <img
+          src="https://tse3.mm.bing.net/th/id/OIP.hLSEDVn3EMOqJDY8KTpA3gAAAA?pid=ImgDet&w=177&h=177&c=7&dpr=1.3&o=7&rm=3"
+          alt="icon"
+          class="ch-avatar"
+        />
+      </div>
     </div>
 
-    <!-- SEARCH -->
-    <div class="search">
-
-        <input type="text" placeholder="Search">
-
-        <button class="ic">
-
-            <img src="https://cdn-icons-png.flaticon.com/128/751/751463.png"
-            width="15px">
-
-        </button>
-
-    </div>
-
-    <!-- RIGHT -->
-    <div class="right">
-
-        <button class="create">+ Create</button>
-
-        <img class="profile" src="https://tse2.mm.bing.net/th/id/OIP.lY3wJFi8wpt2UDcX2GO-ggHaGS?rs=1&pid=ImgDetMain&o=7&rm=3" alt="profile">
-        <img class="bell" src="https://cdn-icons-png.flaticon.com/128/2058/2058148.png" alt="notification">
-    </div>
-    <br>
-    <br>
-    <!-- CATEGORY SECTION -->
-</header>
-<div class="categories">
-
-    <button>All</button>
-    <button>Music</button>
-    <button>HTML</button>
-    <button>CSS</button>
-    <button>Songs</button>
-    <button>Entertainment</button>
-    <button>Gaming</button>
-    <button>Movies</button>
-    <button>Live</button>
-    <button>Indian pop</button>
-    <button>T-series</button>
-    <button>Gaming</button>
-    <button>Live</button>
-    <button>Circket</button>
-    <button>Comedy clubs</button>
-
-</div>
- <!-- MAIN SECTION -->
+    <!-- MAIN LAYOUT -->
     <div class="main">
-
-        <!-- LEFT SIDEBAR -->
-        <div class="sidebar">
-<h3>You</h3>
-            <p>🏠 Home</p>
-            <p>🎬 Shorts</p>
-            <p>📺 Subscriptions</p>
-            <p>🕒 History</p>
-            <p>👍 Liked Videos</p>
-            <p>Downloads</p>
-            
-
-       
-         <!-- LEFT SIDEBAR -->
-        <div class="sidebar2">
-<h3>Explore</h3>
-<p><img src="https://up.yimg.com/ib/th/id/OIP.9UqfoFXUzuxVO1Hs56PQogHaHa?pid=Api&rs=1&c=1&qlt=95&w=107&h=107" width="20px" height="20px"> Shopping</p>
-            <p><img src="https://up.yimg.com/ib/th/id/OIP.3muFaw024iIJ3mlXPj1tKAHaHa?pid=Api&rs=1&c=1&qlt=95&w=122&h=122" width="20px" heigth="20px">Music</p>
-            <p><img src="https://up.yimg.com/ib/th/id/OIP.JFrZCV5Ehy29ooToG93nUAHaHa?pid=Api&rs=1&c=1&qlt=95&w=117&h=117" width="20px" height="20px">Movie</p>
-            <p>Livey</p>
-
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="side-item active">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/553/553416.png"
+            alt="home"
+            class="side-icon"
+          />
+          <p>Home</p>
         </div>
-         </div>
 
-        <!-- RIGHT VIDEOS-->
-<div class="videos">
+        <div class="side-item">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/553/553417.png"
+            alt="shorts"
+            class="side-icon"
+          />
+          <p>Shorts</p>
+        </div>
+        <p class="side-heading">Subscriptions</p>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kNOE1MKaqvnKA1bqr1lj-HuE3lCDMcFXPqWJnqWl3oAA=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="Zee Music"
+          />
+          <p>Zee Music Comp...</p>
+        </div>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_lNAHqeGFPYR8dqJG4-uRBF_GHIkOACXx-TBMZIPA=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="T-Series"
+          />
+          <p>T-Series</p>
+        </div>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kqd7v3FbBHFbUcSjyRPnmGkQMfOCMRUFaTL1y1=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="ARY Digital"
+          />
+          <p>ARY Digital HD</p>
+        </div>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kd_FJkwJLobh82NCPX3Q9gNhBJ7xQQUBfNt5Hr=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="Colors TV"
+          />
+          <p>Colors TV</p>
+        </div>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_l5B_mcO_43tFT7bXl4QvGMJ_ILwMk1nGAUoSY3=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="Pranjal"
+          />
+          <p>Pranjal Kamra</p>
+        </div>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_nDt_MEmxFNJEhTfPg4b7Oq5R5S6T_4c5m3wBRo=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="warikoo"
+          />
+          <p>warikoo</p>
+        </div>
+        <div class="side-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kBt7L3zIZiQDU_oKO5f3vvAyO_wHjTEkXkB5GLIA=s88-c-k-c0x00ffffff-no-rj"
+            class="side-avatar"
+            alt="Ishan"
+          />
+          <p>Ishan Sharma</p>
+        </div>
+        <p class="side-link">Show more</p>
 
-    <div class="card">
-        <iframe width="360" height="215"
-         src="https://www.youtube.com/embed/2pO3XlgtO2k?si=ED3FkrxxisjaOCkA" 
-         title="YouTube video player" 
-         frameborder="0" 
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-         referrerpolicy="strict-origin-when-cross-origin" 
-         allowfullscreen 
-        </iframe>
+        <p class="side-heading">You</p>
+        <div class="side-item">
+          <span>&#128100;</span>
+          <p>Your channel</p>
+        </div>
+        <div class="side-item">
+          <span>&#128336;</span>
+          <p>History</p>
+        </div>
+        <div class="side-item">
+          <span>&#9776;</span>
+          <p>Playlists</p>
+        </div>
+        <div class="side-item">
+          <span>&#128337;</span>
+          <p>Watch later</p>
+        </div>
+        <div class="side-item">
+          <span>&#128077;</span>
+          <p>Liked videos</p>
+        </div>
+        <div class="side-item">
+          <span>&#127910;</span>
+          <p>Your videos</p>
+        </div>
+        <div class="side-item">
+          <span>&#11015;</span>
+          <p>Downloads</p>
+        </div>
+        <p class="side-link">Show more</p>
+      </div>
+
+      <!-- CONTENT AREA -->
+      <div class="content">
+        <!-- FILTER CHIPS -->
+        <div class="chips">
+          <button class="chip active">All</button>
+          <button class="chip">Music</button>
+          <button class="chip">Mixes</button>
+          <button class="chip">T-Series</button>
+          <button class="chip">Amitabh Bhattacharya</button>
+          <button class="chip">Shawn Mendes</button>
+          <button class="chip">Indian pop music</button>
+          <button class="chip">Arijit Singh</button>
+          <button class="chip">Disha Vakani</button>
+          <button class="chip">Playlists</button>
+          <button class="chip">Irshad Kamil</button>
+          <button class="chip">Gaming</button>
+          <button class="chip">Romantic comedies</button>
+          <button class="chip">Jubin Nautiyal</button>
+        </div>
+
+        <!-- VIDEO GRID -->
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <div class="video-card">
+            <div class="thumb-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/dT2owtxkU8k?si=IPStgdAykxpaU4pK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-text">
+                <p class="video-title">My Mix</p>
+                <p class="video-meta">Noor, Anuv Jain, Bir, and more</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-card">
+            <div class="thumb-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/lY2yjAdbvdQ?si=GGCcWosKVQ9xqzt7"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <span class="duration">1:59</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AIdro_kNOE1MKaqvnKA1bqr1lj-HuE3lCDMcFXPqWJnqWl3oAA=s88"
+                class="ch-avatar"
+                alt="channel"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Jab Talak (First Look) Shahid, Kriti, Rashmika | Pritam,
+                  Arijit Singh | Cocktail 2
+                </p>
+                <p class="video-meta">Universal Music India ✓</p>
+                <p class="video-meta">25M views • 2 months ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-card">
+            <div class="thumb-wrap">
+              <img
+                src="https://i.ytimg.com/vi/foE1mO2yM04/hqdefault.jpg"
+                alt="Shawn Mendes"
+                class="thumbnail"
+              />
+              <span class="duration">Mix</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AIdro_kd_FJkwJLobh82NCPX3Q9gNhBJ7xQQUBfNt5Hr=s88"
+                class="ch-avatar"
+                alt="channel"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Mix - Shawn Mendes - There's Nothing Holdin' Me Back
+                  (Official)
+                </p>
+                <p class="video-meta">Shawn Mendes</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="video-card">
+            <div class="thumb-wrap">
+              <img
+                src="https://i.ytimg.com/vi/G9QSVR5f-iU/hqdefault.jpg"
+                alt="Taarak Mehta"
+                class="thumbnail"
+              />
+              <span class="duration">21:12</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AIdro_kqd7v3FbBHFbUcSjyRPnmGkQMfOCMRUFaTL1y1=s88"
+                class="ch-avatar"
+                alt="channel"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Taarak Mehta Ka Ooltah Chashmah | तारक मेहता का उल्टा चश्मा
+                </p>
+                <p class="video-meta">Sony Pal</p>
+                <p class="video-meta">21M+ views</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="video-card">
+            <div class="thumb-wrap">
+              <img
+                src="https://i.ytimg.com/vi/jNQXAC9IVRw/hqdefault.jpg"
+                alt="Video 5"
+                class="thumbnail"
+              />
+              <span class="duration">4:32</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AIdro_l5B_mcO_43tFT7bXl4QvGMJ_ILwMk1nGAUoSY3=s88"
+                class="ch-avatar"
+                alt="channel"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Arijit Singh - Tum Hi Ho | Official Video
+                </p>
+                <p class="video-meta">T-Series</p>
+                <p class="video-meta">500M views • 3 years ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 6 -->
+          <div class="video-card">
+            <div class="thumb-wrap">
+              <img
+                src="https://i.ytimg.com/vi/fJ9rUzIMcZQ/hqdefault.jpg"
+                alt="Video 6"
+                class="thumbnail"
+              />
+              <span class="duration">3:55</span>
+            </div>
+            <div class="video-info">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AIdro_nDt_MEmxFNJEhTfPg4b7Oq5R5S6T_4c5m3wBRo=s88"
+                class="ch-avatar"
+                alt="channel"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Bohemian Rhapsody - Queen (Official Video)
+                </p>
+                <p class="video-meta">Queen Official</p>
+                <p class="video-meta">1.8B views • 8 years ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end video grid -->
+      </div>
+      <!-- end content -->
     </div>
-
-     <div class="card">
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/fHBR1j1kJ1I?si=1umoZ4IXPE17xPVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </div>  -->
-    <div class="card">
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/X7Lcz4hjJ6Y?si=LnOjYs9fwY1IKIyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
-
-    </div>
-    <br>
-    <div class="card">
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/beBmY38f_M0?si=k8etyq4RNVi0fOfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </div>
-    <div class="card">
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/lT-JyIJ00rM?si=KN93to6QkaVb1Y03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </div>
-     <br>
-
-</div> 
-<!-- <h3>Shorts</h3>
-    </div>
-     shorts 
-     <div class="shorts">
-        <iframe width="150px" heigth="200px"
-        src="">
-    </iframe>
-     </div>
-      <div class="shorts">
-        <iframe width="150px" heigth="200px"
-        src="">
-    </iframe>
-     </div>
-      <div class="shorts">
-        <iframe width="150px" heigth="200px"
-        src="">
-    </iframe>
-     </div>
-      <div class="shorts">
-        <iframe width="150px" heigth="200px"
-        src="">
-    </iframe>
-     </div>
-      <div class="shorts">
-        <iframe width="150px" heigth="200px"
-        src="">
-    </iframe>
-     </div> -->
-</body>
+    <!-- end main -->
+  </body>
 </html>
