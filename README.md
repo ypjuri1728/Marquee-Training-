@@ -16,6 +16,7 @@ This repository contains small projects and exercises built to strengthen my und
 | 🍽️ Restaurant | HTML, CSS | Restaurant webpage layout |
 | 🎨 Whiteboard | HTML, CSS, JavaScript | Interactive drawing board |
 | 📁 Project 1 | HTML, CSS | Frontend practice project |
+| 🎬 StudioNamma | HTML, CSS, JavaScript | Creative studio website |
 
 ---
 
