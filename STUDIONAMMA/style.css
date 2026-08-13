@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: #b0aba4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+}
+ 
+/* TOP CREDIT */
+.top-credit {
+  font-size: 13px;
+  color: #120c03;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+ 
+/* CARD */
+.card {
+  width: 450px;
+  background: #e8e0d4;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 14px 0;
+}
+ 
+/* UNIVERSITY TAG */
+.university-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+ 
+.uni-icon {
+  font-size: 20px;
+}
+ 
+.uni-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: #3a2a1a;
+  line-height: 1.3;
+}
+ 
+/* CIRCLE DECORATION TOP RIGHT */
+.circle-deco {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+ 
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #4a3728;
+}
+ 
+.c1 { width: 70px; height: 70px; top: 0; right: 0; }
+.c2 { width: 50px; height: 50px; top: 10px; right: 10px; }
+.c3 { width: 30px; height: 30px; top: 20px; right: 20px; }
+ 
+/* TITLE BLOCK */
+.title-block {
+  padding: 8px 18px 0;
+}
+ 
+.main-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #3a2a1a;
+  line-height: 1.05;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+ 
+/* PHOTO AREA */
+.photo-area {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+ 
+/* RING BACKGROUND */
+.ring-bg {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 260px;
+}
+ 
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 22px solid #4a3728;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.r1 { width: 260px; height: 260px; }
+.r2 { width: 195px; height: 195px; }
+.r3 { width: 130px; height: 130px; }
+ 
+/* PROFILE IMAGE */
+.profile-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  object-position: top;
+}
+ 
+/* NAME BANNER */
+.name-banner {
+  background: #4a3728;
+  padding: 12px 18px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+ 
+.name-text {
+  font-size: 42px;
+  font-weight: 900;
+  color: #f5f0ea;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+ 
+/* INFO BLOCK */
+.info-block {
+  background: #4a3728;
+  padding: 10px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+ 
+.full-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #f5f0ea;
+  letter-spacing: 1px;
+}
+ 
+.role-tag {
+  font-size: 13px;
+  color: #d4c4a8;
+  background: #3a2a1a;
+  padding: 3px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+ 
+/* FOLLOW BUTTON */
+.follow-btn {
+  margin-top: 6px;
+  background: #f5f0ea;
+  color: #3a2a1a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+ 
+.follow-btn:hover {
+  background: #e8d8b8;
+}
