@@ -81,20 +81,9 @@ More interactions and refinements can be added as the project evolves.
 
 ---
 
-## ✦ TAKE A LOOK
-
-**Live Project:**  
-https://github.com/ypjuri1728/Marquee-Training-/tree/main/STUDIONAMMA
-
----
-
 ## 👩‍💻 CREATED BY
 
 **Priyanshi Yadav**
-
-Frontend Developer • Creative Web Enthusiast
-
-GitHub → https://github.com/ypjuri1728
 
 ---
 
